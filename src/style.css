@@ -1,0 +1,10 @@
+#titulo-centralizado {
+	text-align: center;
+}
+#cartao {
+	text-align: right;
+	color: darkmagenta;
+}
+::placeholder {
+	color: pink;
+}
