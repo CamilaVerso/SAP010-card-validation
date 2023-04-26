@@ -2,28 +2,41 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>Card Validation</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-        <h1 id="titulo-centralizado">Checkout</h1> 
+      <h1 id="titulo-centralizado">Checkout</h1> 
     </header>
     <main>
       <p>Agora vamos confirmar o seu cartão de crédito</p>
-      <label id="cartao">Cartão</label>
-      <div class="numero-do-cartao">
-        <label for="numero-do-cartao">Número do Cartão</label>
-        <input type="text" id="card-number" maxlength="16" placeholder="0000 0000 0000 0000"/>
-      
-  
-</div>
+      <form>
+        <label for="entradaNome">Nome impresso no cartão </label><br>
+        <input type="text" id="entradaNome" name="entradaNome" placeholder="Maria da Silva" required><br>
+
+        <label for="numeroCartao">Número do Cartão</label><br>
+        <input type="text" id="numeroCartao" name="numeroCartao" maxlength="16" placeholder="0000 0000 0000 0000" required><br>
+
+        <label for="entradaVenc">Vencimento </label><br>
+        <input type="text" id="entradaVenc" name="entradaVenc" placeholder="12/2030" required><br>
+
+        <label for="entradaCvv">CVV </label><br>
+        <input type="text" id="entradaCvv" name="entradaCvv" placeholder="000" required><br>
+        <br>
+        <button type="submit" id="enviar">Confirmar</button>
+
+      </form>
+
+      </div>
       
 
 
 
     </main>
-    <footer></footer>
+    <footer>
+
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
