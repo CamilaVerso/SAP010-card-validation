@@ -1,42 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Card Validation</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1 id="titulo-centralizado">Checkout</h1> 
-    </header>
-    <main>
-      <p>Agora vamos confirmar o seu cartão de crédito</p>
-      <form>
-        <label for="entradaNome">Nome impresso no cartão </label><br>
-        <input type="text" id="entradaNome" name="entradaNome" placeholder="Maria da Silva" required><br>
 
-        <label for="numeroCartao">Número do Cartão</label><br>
-        <input type="text" id="numeroCartao" name="numeroCartao" maxlength="16" placeholder="0000 0000 0000 0000" required><br>
-
-        <label for="entradaVenc">Vencimento </label><br>
-        <input type="text" id="entradaVenc" name="entradaVenc" placeholder="12/2030" required><br>
-
-        <label for="entradaCvv">CVV </label><br>
-        <input type="text" id="entradaCvv" name="entradaCvv" placeholder="000" required><br>
-        <br>
-        <button type="submit" id="enviar">Confirmar</button>
-
-      </form>
-
-      </div>
-      
+<head>
+  <meta charset="utf-8">
+  <title>Validar Cartão de Crédito</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
 
+<body>
+  <header>
+    <h1 id="tituloPrincipal"> Vamos ver se o seu Cartão é válido?</h1>
+    <h2><strong>Faremos isso usando o Algoritmo de Luhn</strong></h2>
+  </header><br>
 
-    </main>
-    <footer>
+  <main>
+    <p>Para testar se o cartão é válido, precisaremos que informe somente o número do cartão.</p>
 
-    </footer>
-    <script src="index.js" type="module"></script>
-  </body>
+    <form id="principal" name="validaCartão">
+
+      <label for="entradaNum" id="boxNum">Número impresso no cartão</label><br><br>
+      <input type="text" id="numeroCartao" name="numeroCartao" placeholder="0000 0000 0000 0000" maxlength="16"
+        autocomplete="off"><br><br>
+
+    </form>
+    <button type="submit" id="enviar">Verificar</button>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
