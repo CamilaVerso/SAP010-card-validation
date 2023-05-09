@@ -32,7 +32,7 @@ ser multiplicados por dois; se esse número for maior ou igual a 10, devemos
 adicionar os dígitos do resultado; o número a verificar será válido se a soma de
 seus dígitos finais for um múltiplo de 10.
 
-##Como usar o site
+## Como usar o site
 
 Para que a função seja ativada é necessário que insira um número de cartão (contendo 16 dígitos - quantidade de caracteres permitidos no input) e clique no botão verificar, aparecerá um pop-up informando se o número digitado é válido ou não como cartão de crédito. Caso o usuário clique no botão antes de digitar o número, aparecerá um pop-up pedindo-lhe que digite um número de cartão.
 
