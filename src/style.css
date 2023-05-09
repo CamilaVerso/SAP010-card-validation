@@ -70,7 +70,7 @@ input {
 }
 
 input:hover{
-	transform: scale(1.5); /*faz o input aumentar em 20% quando passa o mouse por cima*/
+	transform: scale(1.5); /*faz o input aumentar em 50% quando passa o mouse por cima*/
 }
 
 button:hover {

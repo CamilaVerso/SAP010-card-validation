@@ -1,21 +1,23 @@
-#  Validador de Cartão de Crédito - SP010 Laboratória
+# Validador de Cartão de Crédito - SP010 Laboratória
 
-Este foi o primeiro projeto proposto no Bootcamp da laboratória e tem como objetivos: 
+Este foi o primeiro projeto proposto no Bootcamp da laboratória e tem como objetivos:
 
-* Trabalhar com base em um boilerplate, a estrutura básica de um projeto em diferentes
+- Trabalhar com base em um boilerplate, a estrutura básica de um projeto em diferentes
   pastas (através de módulos em JS).
-* Conhecer as ferramentas de manutenção e melhoria do código (linters e testes
+- Conhecer as ferramentas de manutenção e melhoria do código (linters e testes
   unitários).
-* Aprender sobre objetos, estruturas, métodos e iteração (loops) em JavaScript
-* Implementar controle de versão com git (e a plataforma github)
+- Aprender sobre objetos, estruturas, métodos e iteração (loops) em JavaScript
+- Implementar controle de versão com git (e a plataforma github)
 
-***
+---
 
 ## Sobre o projeto
 
-Desenvolvi uma interface para que o usuário possa verificar se o número do cartão de crédito em questão é válido e para isso foi utilizado o *algoritmo de Luhn*.
+Desenvolvi uma interface para que o usuário possa verificar se o número do cartão de crédito em questão é válido e para isso foi utilizado o _algoritmo de Luhn_.
 
-Para este projeto a linha de raciocínio que segui foi a de começar pelo básico e ser objetiva, focando mais na funcionalidadedo do código. 
+Para este projeto a linha de raciocínio que segui foi a de começar pelo básico e ser objetiva, focando mais na funcionalidadedo do código.
+
+Inseri uma função que não permite que o usuário digite outros caracteres além de números.
 
 ## Sobre o Algoritmo de Luhn
 
@@ -30,7 +32,20 @@ ser multiplicados por dois; se esse número for maior ou igual a 10, devemos
 adicionar os dígitos do resultado; o número a verificar será válido se a soma de
 seus dígitos finais for um múltiplo de 10.
 
-## Tecnologias utilizadas  
+##Como usar o site
+
+Para que a função seja ativada é necessário que insira um número de cartão (contendo 16 dígitos - quantidade de caracteres permitidos no input) e clique no botão verificar, aparecerá um pop-up informando se o número digitado é válido ou não como cartão de crédito. Caso o usuário clique no botão antes de digitar o número, aparecerá um pop-up pedindo-lhe que digite um número de cartão.
+
+## Teste
+
+Abaixo segue números de cartões para que possa utilizar e testar o site:
+
+- 4916967337683945
+- 2221003909489125
+- 5038398054241867
+
+## Tecnologias utilizadas
+
 <div>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" / width="40" height="40">  
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" / width="40" height="40">  
