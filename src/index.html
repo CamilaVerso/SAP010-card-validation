@@ -9,29 +9,35 @@
 
 
 <body>
+  <section class="layout">
+    <div class="header">
+      <header>
+        <h1> Vamos verificar se o seu cartão de crédito é válido?</h1>
+        <p><strong>Faremos isso usando o Algoritmo de Luhn</strong></p>
+      </header>
+    </div>
+    <div class="main">
+      <main>
+        <p>Para testar se o cartão é válido, precisaremos que informe o número do cartão.</p>
 
-  <header>
-    <h1> Vamos verificar se o seu cartão de crédito é válido?</h1>
-    <h2><strong>Faremos isso usando o Algoritmo de Luhn</strong></h2>
-  </header>
+        <form id="principal" name="validaCartão">
 
-  <main>
-    <p>Para testar se o cartão é válido, precisaremos que informe somente o número do cartão.</p>
+          <label for="entradaNum" id="boxNum">Número impresso no cartão</label><br>
+          <input type="text" id="numeroCartao" name="numeroCartao" placeholder="0000 0000 0000 0000" maxlength="16"
+            autocomplete="off" width="4000px">
 
-    <form id="principal" name="validaCartão">
+        </form>
+        <button type="submit" id="enviar">Verificar</button>
 
-      <label for="entradaNum" id="boxNum">Número impresso no cartão</label><br>
-      <input type="text" id="numeroCartao" name="numeroCartao" placeholder="0000 0000 0000 0000" maxlength="16"
-        autocomplete="off" width="4000px">
-
-    </form>
-    <button type="submit" id="enviar">Verificar</button>
-
-  </main>
-  <footer>
-
-  </footer>
-  <script src="index.js" type="module"></script>
+      </main>
+    </div>
+    <div class="footer">
+      <footer>
+        <h3 id="rodapé">Desenvolvido por Camila Gonçalves durante o Bootcamp da Laboratória</h3>
+      </footer>
+    </div>
+    <script src="index.js" type="module"></script>
+  </section>
 </body>
 
 </html>

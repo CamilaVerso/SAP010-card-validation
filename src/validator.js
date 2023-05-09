@@ -30,4 +30,5 @@ const validator = {
     return numMask;
   },
 };
+
 export default validator;
