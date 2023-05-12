@@ -2,8 +2,8 @@ import validator from "./validator.js";
 
 //nesta função consigo fazer o input só aceitar números
 const input = document.getElementById("numeroCartao");
-input.addEventListener("keypress", function (e) {
-  /*Deixei o Keypress porque o Keydown estava com comportamento confuso*/ // evento de "escutar" o teclado
+input.addEventListener("keydown", function (e) {
+  // evento de "escutar" o teclado
   //console.log(e);
   if (!checkChar(e)) {
     e.preventDefault(); // prevenindo um evento padrão, neste caso o caracter não aceito não aparecerá no input
